@@ -1,0 +1,39 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "image-similarity-api"
+version = "1.0.0"
+description = "FastAPI service for comparing images using computer vision metrics and LLM semantic analysis"
+authors = [{name = "Your Name", email = "your.email@example.com"}]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "fastapi>=0.104.1",
+    "uvicorn[standard]>=0.24.0",
+    "python-multipart>=0.0.6",
+    "opencv-python>=4.8.1.78",
+    "numpy>=1.24.3",
+    "Pillow>=10.0.1",
+    "scikit-image>=0.21.0",
+    "streamlit>=1.28.1",
+    "httpx>=0.25.0",
+    "requests>=2.31.0",
+    "openai>=1.3.7",
+    "python-dotenv>=1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.3",
+    "pytest-asyncio>=0.21.1",
+    "black>=23.9.1",
+    "flake8>=6.1.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/ashishmahendra/image_similarity"
+Repository = "https://github.com/ashishmahendra/image_similarity"
+Issues = "https://github.com/ashishmahendra/image_similarity/issues"
